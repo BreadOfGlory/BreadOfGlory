@@ -48,3 +48,16 @@ Stock trading platforms where different services respond to events such as "new 
 This architecture is designed for scalability by splitting the processing and data across multiple nodes (spaces). It aims to avoid bottlenecks by distributing load across spaces and using in-memory grids for fast data access.
 ### Example
 Online gaming systems that handle large amounts of concurrent users by distributing game state and user data across multiple servers to balance the load.
+
+# Summary of architecture patterns
+
+| Architecture Style     | Description                                               | Example                                        |
+| ---------------------- | --------------------------------------------------------- | ---------------------------------------------- |
+| Layered                | Organized in layers (UI, business, data)                  | Standard web apps (e.g. Java EE or .NET apps)  |
+| Modular Monolith       | Single application, divided into modules                  | ERP systems (e.g. SAP)                         |
+| Microkernel            | Minimal core with plug-ins/extensions                     | Eclipse IDE, Photoshop                         |
+| Microservices          | Loosely coupled services, independently deployable        | Netflix, Amazon                                |
+| Service-Based          | Similar to microservices but with more shared components  | E-commerce platforms                           |
+| SOA (Service-Oriented) | Focus on service reuse via ESB                            | Banking systems, enterprise workflows          |
+| Event-Driven           | Components react to real-time events                      | Stock trading systems, IoT platforms           |
+| Space-Based            | Designed for scalability using in-memory grids and spaces | Online gaming systems, high-traffic e-commerce |
